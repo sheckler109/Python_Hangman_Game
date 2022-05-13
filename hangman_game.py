@@ -2,7 +2,7 @@ import os
 import random
 
 def data():
-    with open("hagman_game/data.txt","r",encoding='UTF-8') as f:
+    with open("data.txt","r",encoding='UTF-8') as f:
         words = [i.replace("\n","")for i in f]
     return random.choice(words)
 
