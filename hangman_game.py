@@ -16,20 +16,19 @@ def main():
     
     while True:
         try:
-            os.system("clear")
+            os.system("clear") #cls si estás en windows
             print(word_guess)
             print(f'\t{" ".join(spaces_list)}')
 
             print(f"\nTienes {attempt} intentos")
             user_letter = input("\nletra: ")
 
-            if len(user_letter) > 1 and len(user_letter) < len(word_guess) or user_letter.isnumeric() == True:
-                raise ValueError
-
-            attempt -= 1
+            if len(user_letter) > 1 and user_letter != word_guess or user_letter.isnumeric() == True:
+                raise ValueError#si el usuario ingresa un numero o más de dos letras que no sean la palabra correcta, eleva un ValueError
+            attempt -= 1 #Los intentos van restandose en 1
             
             for i in range(len(word_guess_list)):
-                if user_letter in word_guess_list[i]:
+                if user_letter in word_guess_list[i]: #Verifica si la letra ingresada por el usuario se encuentra en la palabra a adivinar
                     spaces_list[i] = user_letter
         
 
@@ -41,7 +40,7 @@ def main():
                 break
 
         except ValueError:
-            print("Solo puedes ingresar una letra")
+            print("Solo puedes ingresar una letra o la palabra correcta")
             input("Presiona Enter ↵")
             continue
 
