@@ -23,7 +23,7 @@ def main():
             print(f"\nTienes {attempt} intentos")
             user_letter = input("\nletra: ")
 
-            if len(user_letter) > 1 or user_letter.isnumeric() == True:
+            if len(user_letter) > 1 and len(user_letter) < len(word_guess) or user_letter.isnumeric() == True:
                 raise ValueError
 
             attempt -= 1
@@ -33,7 +33,7 @@ def main():
                     spaces_list[i] = user_letter
         
 
-            if spaces_list == word_guess_list:
+            if spaces_list == word_guess_list or user_letter == word_guess:
                 print(f"Adivinaste la palabra!! :) \nla palabra era {word_guess}")
                 break
             elif attempt == 0:
