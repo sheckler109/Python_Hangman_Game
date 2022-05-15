@@ -6,4 +6,5 @@ Basic Python Hangman Game // Created by sheckler109 // 2022
 ![3](https://user-images.githubusercontent.com/83348124/168475271-3416f529-ad10-4a6c-aacf-e98d323c1442.png)
 ![4](https://user-images.githubusercontent.com/83348124/168475275-62319e5f-eaa7-474c-b5dd-71fa7932b627.png)
 ![5](https://user-images.githubusercontent.com/83348124/168475276-0e0c19d0-7bff-47b1-9db9-5d5655b77cd0.png)
-![6](https://user-images.githubusercontent.com/83348124/168475279-29b33fbe-9e47-4289-9ade-6ce616708c9b.png)
+![6](https://user-images.githubusercontent.com/83348124/168475279-29b33fbe-9e47-4289-9ade-6ce616708c9b.png)![8](https://user-images.githubusercontent.com/83348124/168475411-894d069d-6296-450a-8ba2-2d257adfa80c.png)
+![9](https://user-images.githubusercontent.com/83348124/168475421-7eefd140-231a-4995-9783-a066efc02b1c.png)
